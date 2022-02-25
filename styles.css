@@ -1,0 +1,178 @@
+html {
+    background-color: rgb(19, 1, 99);
+    color: white;
+}
+
+body {
+    background-color: rgb(25, 2, 124);
+    margin: 3% 8%;
+    border-radius: 20px;
+    border: 5px solid yellow;
+    box-shadow: 2px 2px 50px yellow ;
+}
+
+.clear {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#logo-block {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#nav-list ul li{
+    list-style-type: none;
+    float: left;
+    width: 174px;
+    border-right: 2px solid white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+}
+
+#nav-list ul {
+    background-color: rgb(19, 1, 99);
+    border: 2px solid white;
+    padding: 4px 0%;
+    border-radius: 6px;
+}
+
+#content {
+    /* margin: auto 3%; */
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font: Normal 12px Arial, Helvetica, sans-serif;
+}
+
+#left-pane {
+    width: 55%;
+    margin-right: 40px;
+}
+
+.box {
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px grey;
+    padding-left: 20px;
+    
+}
+
+.box h2, .box h3 {
+    color: rgb(19, 1, 99);
+    /* padding-left: 15px; */
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+#right-pane {
+    display: inline-block;
+    width: 35%;
+}
+
+.box-2-inner {
+    width: 29%;
+    margin-right: 40px;
+}
+
+.cn-content img{
+    float: left;
+    margin-right: 8px;
+}
+
+.cn-content h4 {
+    margin: 3px;
+}
+span.date {
+    color: rgba(175, 43, 10, 0.932);
+}
+
+.opace-note {
+    opacity: 0.8;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.general, .university, .quick {
+    float: left;
+    width: 15%;
+    border-right: 2px solid rgb(202, 202, 202);
+}
+
+.about {
+    float: left;
+    width: 30%;
+}
+
+footer div {
+    margin-left: 4%;
+    text-align: left;
+}
+
+.footer-list{
+    padding: 0%;
+}
+
+.footer-list li {
+    list-style-image: linear-gradient( to left bottom, red, blue);
+    margin-top: 10px;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: rgb(19, 1, 99);
+}
+
+footer {
+    margin-top: 30px;
+    background-color: rgb(233, 233, 233);
+}
+
+#nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-list li:hover {
+    /* text-decoration: underline; */
+    background-color: rgba(0, 165, 165, 0.63);
+}
+
+
+caption {
+    caption-side: bottom;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    height: 30px;
+    width: 40px;
+}
+
+tr:nth-child(n)  {
+    background-color: rgb(25, 2, 124);
+    color: white;
+}
+
+tr td:nth-child(n+6) {
+    background-color: red;
+    color: white;
+}

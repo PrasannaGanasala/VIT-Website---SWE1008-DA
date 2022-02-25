@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT University - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #content {
+            padding: 3px 20px;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        #content h1 {
+            text-align: center;
+            color: rgb(19, 1, 99);
+        }
+
+        .field label {
+            width: 45%;
+            display: inline-block;
+            /* margin: 5px; */
+            padding-left: 5%;
+        }
+
+        form h3 {
+            background-color: rgb(19, 1, 99);
+            color: white;
+            padding-left: 10px;
+            line-height: 1.8;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        sup {
+            color: red;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .usual-sup {
+            color: inherit;
+            font-weight: inherit;
+            font-size: 10px;
+        }
+
+        .rg {
+            margin-right: 4.5%;
+        }
+
+        option {
+            background-color: rgb(19, 1, 99);
+            color: white;
+            border-bottom: 1px solid white;
+            text-align: left;
+        }
+
+        select {
+            text-align-last: center;
+            min-width: 300px;
+            line-height: 2px;
+            font-size: 15px;
+        }
+
+        .preferences select {
+            min-width: 180px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="logo-block">
+        <h1>Vellore Institute Of Technology (VIT) Chennai</h1>
+    </div>
+
+    <div id="nav-list">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="">Academics</a></li>
+            <li><a href="">Admission</a></li>
+            <li><a href="">Campus Life</a></li>
+            <li style="border-style: none; width: 380px;"><a href="">Apply for the Admission in VIT University</a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+
+
+
+    <div id="content">
+        <h1>VITEEE-2022 Application Form</h1>
+
+        <div id="application">
+            <form action="">
+                <div class="personal">
+                    <h3>Personal Information</h3>
+                    <div class="field">
+                        <label>First Name <sup>*</sup></label>
+                        <input type="text" id="fname">
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Middle Name</label>
+                        <input type="text" id="mname">
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Last Name<sup>*</sup></label>
+                        <input type="text" id="lname">
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Date of Birth<sup>*</sup></label>
+                        <input type="date" id="dob">
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Email ID<sup>*</sup></label>
+                        <input type="email" id="email">
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Mobile Number<sup>*</sup></label>
+                        <input type="tel" name="" id="">
+                    </div>
+                </div>
+
+                <div class="school">
+                    <h3>School Information</h3>
+                    <div class="field">
+                        <label>Medium Of Instruction <sup>*</sup></label>
+                        <span class="rg"><input type="radio" name="moi" id="eng">English</span>
+                        <span class="rg"><input type="radio" name="moi" id="hin">Hindi</span>
+                        <span class="rg"><input type="radio" name="moi" id="tam">Tamil</span>
+                        <span class="rg"><input type="radio" name="moi" id="tel">Telugu</span>
+                        <span class="rg"><input type="radio" name="moi" id="others">Others</span>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Mode of Study <sup>*</sup></label>
+                        <span class="rg"><input type="radio" name="mos" id="reg">Regular</span>
+                        <span class="rg"><input type="radio" name="mos" id="pri">Private</span>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>School Pincode<sup>*</sup></label>
+                        <input type="text" id="pincode" placeholder="Enter Pincode">
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>State<sup>*</sup></label>
+                        <select name="state" id="school-state" onselect="alignCenter()">
+                            <option value="" hidden>--select your school state--</option>
+                            <option value="andhrapradesh">Andhra Pradesh</option>
+                            <option value="tamilnadu">Tamil Nadu</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="maharashtra">Maharashtra</option>
+                            <option value="telangana">Telangana</option>
+                            <option value="madhyapradesh">Madhya Pradesh</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Name of the Board<sup>*</sup></label>
+                        <select name="Board" id="board-name">
+                            <option value="" hidden>--select name of your school board--</option>
+                            <option value="bos">Board Of Secondary Education </option>
+                            <option value="boi">Board Of Intermediate Education </option>
+                            <option value="cbse">Central Board Of Secondary Education</option>
+                            <option value="icse">Indian Certificate Of Secondary Education</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Name of the School<sup>*</sup></label>
+                        <input type="text" placeholder="Enter 12th std School Name" id="" style="width: 300px;">
+                    </div>
+                </div>
+
+                <div class="preferences">
+                    <h3>Test City Preferences</h3>
+                    <div class="field">
+                        <label>Country Name</label>
+                        <select name="country" id="">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="Dubai">Dubai</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>State Name</label>
+                        <select name="state" id="">
+                            <option value="Andhra">Andhra Pradesh</option>
+                            <option value="TamilNadu">Tamil Nadu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="MadhyaPradesh">Madhya Pradesh</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>Test City</label>
+                        <select name="city" id="">
+                            <option value="KKD">Kakinada</option>
+                            <option value="VSKP">Vishakhapatnam</option>
+                            <option value="RJY">Rajamundry</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>1<sup class="usual-sup">st</sup> Area Preference</label>
+                        <select name="area-1" id="">
+                            <option value="PR">PR College</option>
+                            <option value="Ideal">Ideal College</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="field">
+                        <label>2<sup class="usual-sup">nd</sup> Area Preference</label>
+                        <select name="area-2" id="">
+                            <option value="PR">PR College</option>
+                            <option value="Ideal">Ideal College</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <footer>
+            <div class="general">
+                <h3>General info</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Visit</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">History </a></li>
+                    <li><a href="#">Diversity</a></li>
+                    <li><a href="#">Administration</a></li>
+                    <li><a href="#">Accreditation Status</a></li>
+                </ul>
+            </div>
+            <div class="university">
+                <h3>Wieldstrem University</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Blackboard</a></li>
+                    <li><a href="#">Calendars</a></li>
+                    <li><a href="#">Class Schedule </a></li>
+                    <li><a href="#">Colonel's Compass</a></li>
+                    <li><a href="#">Green Initiatives</a></li>
+                    <li><a href="#">Faculty/Staff Email</a></li>
+                </ul>
+            </div>
+            <div class="quick">
+                <h3>Quick Links</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Colleges &amp; Departments</a></li>
+                    <li><a href="#">Community Education</a></li>
+                    <li><a href="#">Conferencing &amp; Events </a></li>
+                    <li><a href="#">Employment &amp; Benefits</a></li>
+                    <li><a href="#">Financial Aid</a></li>
+                    <li><a href="#">Information Technology</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>About Wieldstrem University</h3>
+                <p style="line-height: 2;">It is a long established fact that a reader will be distracted by the
+                    readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                <p><a href="#">Read More +</a></p>
+            </div>
+
+            <div class="clear"></div>
+        </footer>
+        <div></div>
+    </div>
+
+
+
+
+</body>
+
+</html>
