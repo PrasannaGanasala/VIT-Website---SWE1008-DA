@@ -26,6 +26,12 @@
             padding-left: 5%;
         }
 
+        input,
+        select {
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+
         form h3 {
             background-color: rgb(19, 1, 99);
             color: white;
@@ -68,6 +74,30 @@
         .preferences select {
             min-width: 180px;
         }
+
+        #submit-form {
+            /* border: 2px solid blue; */
+            color: white;
+            background-color: rgb(19, 1, 99);
+            font-weight: bold;
+            font-size: larger;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 30px;
+            line-height: 2;
+            width: 80px;
+            /* box-shadow: 5px 5px 10px rgb(255, 116, 116); */
+
+        }
+
+        #submit-form:hover {
+            cursor: pointer;
+            background-color: rgb(0, 156, 34);
+            /* color: rgb(19, 1, 99); */
+            /* color: rgb(19, 1, 99); */
+
+
+        }
     </style>
 
 </head>
@@ -95,12 +125,12 @@
         <h1>VITEEE-2022 Application Form</h1>
 
         <div id="application">
-            <form action="">
+            <form action="" onsubmit="return false;">
                 <div class="personal">
                     <h3>Personal Information</h3>
                     <div class="field">
                         <label>First Name <sup>*</sup></label>
-                        <input type="text" id="fname">
+                        <input type="text" id="fname" required>
                     </div>
                     <hr>
                     <div class="field">
@@ -110,22 +140,22 @@
                     <hr>
                     <div class="field">
                         <label>Last Name<sup>*</sup></label>
-                        <input type="text" id="lname">
+                        <input type="text" id="lname" required>
                     </div>
                     <hr>
                     <div class="field">
                         <label>Date of Birth<sup>*</sup></label>
-                        <input type="date" id="dob">
+                        <input type="date" id="dob" required>
                     </div>
                     <hr>
                     <div class="field">
                         <label>Email ID<sup>*</sup></label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </div>
                     <hr>
                     <div class="field">
                         <label>Mobile Number<sup>*</sup></label>
-                        <input type="tel" name="" id="">
+                        <input type="tel" name="" id="" required>
                     </div>
                 </div>
 
@@ -133,7 +163,7 @@
                     <h3>School Information</h3>
                     <div class="field">
                         <label>Medium Of Instruction <sup>*</sup></label>
-                        <span class="rg"><input type="radio" name="moi" id="eng">English</span>
+                        <span class="rg"><input type="radio" name="moi" id="eng" required>English</span>
                         <span class="rg"><input type="radio" name="moi" id="hin">Hindi</span>
                         <span class="rg"><input type="radio" name="moi" id="tam">Tamil</span>
                         <span class="rg"><input type="radio" name="moi" id="tel">Telugu</span>
@@ -142,18 +172,18 @@
                     <hr>
                     <div class="field">
                         <label>Mode of Study <sup>*</sup></label>
-                        <span class="rg"><input type="radio" name="mos" id="reg">Regular</span>
+                        <span class="rg"><input type="radio" name="mos" id="reg" required>Regular</span>
                         <span class="rg"><input type="radio" name="mos" id="pri">Private</span>
                     </div>
                     <hr>
                     <div class="field">
                         <label>School Pincode<sup>*</sup></label>
-                        <input type="text" id="pincode" placeholder="Enter Pincode">
+                        <input type="text" id="pincode" placeholder="Enter Pincode" required>
                     </div>
                     <hr>
                     <div class="field">
                         <label>State<sup>*</sup></label>
-                        <select name="state" id="school-state" onselect="alignCenter()">
+                        <select name="state" id="school-state" required>
                             <option value="" hidden>--select your school state--</option>
                             <option value="andhrapradesh">Andhra Pradesh</option>
                             <option value="tamilnadu">Tamil Nadu</option>
@@ -166,7 +196,7 @@
                     <hr>
                     <div class="field">
                         <label>Name of the Board<sup>*</sup></label>
-                        <select name="Board" id="board-name">
+                        <select name="Board" id="board-name" required>
                             <option value="" hidden>--select name of your school board--</option>
                             <option value="bos">Board Of Secondary Education </option>
                             <option value="boi">Board Of Intermediate Education </option>
@@ -177,15 +207,16 @@
                     <hr>
                     <div class="field">
                         <label>Name of the School<sup>*</sup></label>
-                        <input type="text" placeholder="Enter 12th std School Name" id="" style="width: 300px;">
+                        <input type="text" placeholder="Enter 12th std School Name" id="" style="width: 300px;"
+                            required>
                     </div>
                 </div>
 
                 <div class="preferences">
                     <h3>Test City Preferences</h3>
                     <div class="field">
-                        <label>Country Name</label>
-                        <select name="country" id="">
+                        <label>Country Name<sup>*</sup></label>
+                        <select name="country" id="" required>
                             <option value="India">India</option>
                             <option value="USA">USA</option>
                             <option value="Dubai">Dubai</option>
@@ -193,8 +224,8 @@
                     </div>
                     <hr>
                     <div class="field">
-                        <label>State Name</label>
-                        <select name="state" id="">
+                        <label>State Name<sup>*</sup></label>
+                        <select name="state" id="" required>
                             <option value="Andhra">Andhra Pradesh</option>
                             <option value="TamilNadu">Tamil Nadu</option>
                             <option value="Delhi">Delhi</option>
@@ -203,8 +234,8 @@
                     </div>
                     <hr>
                     <div class="field">
-                        <label>Test City</label>
-                        <select name="city" id="">
+                        <label>Test City<sup>*</sup></label>
+                        <select name="city" id="" required>
                             <option value="KKD">Kakinada</option>
                             <option value="VSKP">Vishakhapatnam</option>
                             <option value="RJY">Rajamundry</option>
@@ -212,8 +243,8 @@
                     </div>
                     <hr>
                     <div class="field">
-                        <label>1<sup class="usual-sup">st</sup> Area Preference</label>
-                        <select name="area-1" id="">
+                        <label>1<sup class="usual-sup">st</sup> Area Preference<sup>*</sup></label>
+                        <select name="area-1" id="" required>
                             <option value="PR">PR College</option>
                             <option value="Ideal">Ideal College</option>
                         </select>
@@ -226,6 +257,9 @@
                             <option value="Ideal">Ideal College</option>
                         </select>
                     </div>
+                </div>
+                <div class="field" style="text-align: center;">
+                    <input type="submit" id="submit-form">
                 </div>
             </form>
         </div>
