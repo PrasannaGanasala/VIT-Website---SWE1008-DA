@@ -62,7 +62,6 @@ body {
 
 .box h2, .box h3 {
     color: rgb(19, 1, 99);
-    /* padding-left: 15px; */
 }
 
 .float-left {
@@ -103,8 +102,6 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-
 
 .general, .university, .quick {
     float: left;
